@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>特仑苏10年</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+<link href="css/animate.min.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+
+
+<style>
+		
+		*{padding: 0;margin: 0;}
+		
+		/*自动缩放以及loading框架*/
+		.swipe-wrap{width: 100%;height: 100%;position: relative;overflow: hidden;}
+		.swipe{position:absolute;width:100%;}
+		.swipe-box{width: 100%;overflow: hidden;}
+		
+		.m_clear{zoom:1;}
+		.m_clear:after{content:"";display:block;clear:both;}
+		.m_porR {position: relative;}
+		.m_porA {position: absolute;background: #ece3db;width: 100%;height: 100%;}
+		.m_fl {float:left;}
+		.m_fr {float:right;}
+		.m_db {display: block;}
+		.m_dn {display:none;}
+		.m_oh {overflow:hidden;}
+		.m_w100,.m_wrapper,.loadFont {width:100%;}
+		.m_mAuto {margin: 0 auto;}
+		.m_tac {text-align:center;}
+		.m_bgn {background:none;}
+		.m_fs10 {font-size:10px;}
+		.m_fs12 {font-size:12px;}
+		.m_fs14 {font-size:14px;}
+		.m_fs16 {font-size:16px;}
+		.m_fs18 {font-size:18px;}
+		.m_fs22 {font-size:22px;}
+		.m_fw {font-weight:bold;}
+		.cfff {color:#fff;}
+		.m_inpNoBg {-webkit-appearance:none;background:none;}
+		.changeWord { line-height:0;font-size:0; overflow:hidden;color:rgba(255,255,255,0);}
+		
+		/*lufylegend.js样式*/
+		.legend {position:absolute;z-index:2;font-size:0px;}
+		
+		/*loadding样式*/
+		.load {top:0;left:0;width:100%;}
+		.loadImg {width:20%;margin:50% 0 0 40%;}
+	    .loadFont{
+	    	color: #b8945c;
+	    }
+	    .loadImg img{
+	    	-webkit-animation: loadcircle 1.4s infinite linear;
+	    }
+		@-webkit-keyframes loadcircle{
+			from{
+				-webkit-transform: rotate(0deg);
+			}
+			to{
+				-webkit-transform: rotate(360deg);
+			}
+		}
+		
+		
+		</style>
+
+          <!--<img class="fan" src="images/fan.jpg" width="100%" height="auto" style="margin-top: 30px;" />-->
+</head>
+<body>
+	
+	<!--loading-->
+    <div class="m_porA load">
+	    <div class="loadImg"><img src="images/load.png" width="100%" /></div>
+	    <div class="m_porA m_tac m_fs12 loadFont"><br /><br />加载中...</div>
+	</div>
+	
+	<!--main-->
+	 <div class="m_wrapper" style="opacity:0;">
+   
+        <div id="body">
+        	
+        	<audio id="audio" src="mp.mp3" controls="controls" loop="loop" autoplay="autoplay" style="position: absolute;left: 0;top: 0;opacity: 0;">
+			Your browser does not support the audio element.
+			</audio>
+        	
+        	<img class="logo" src="images/logo.png"  />
+        	<img class="la la1" src="images/la.png"  />
+        	<img class="la la2" src="images/close.png"  style="display: none;" />
+        	<div class="close"></div>
+        	<!--文字介绍-->
+
+        	<img class="text xw" src="images/xw.png" />
+        	<img class="text yk" src="images/yk.png" />
+        	<img class="text mm" src="images/mm.png" />
+        	<img class="text zm" src="images/zm.png" />
+        	<img class="text sj" src="images/sj.png" />
+        	<img class="text rs" src="images/rs.png" />
+        	<!--<img class="text cz" src="images/cz.png" />-->
+        	<img class="text pp" src="images/pp.png" />
+        	<img class="text bg" src="images/bg.png" />
+        	<img class="text rk" src="images/rk.png" />
+        	<img class="text gh" src="images/gh.png" />
+        	<img class="text xy" src="images/xy.png" />
+        	<img class="text xxdd" src="images/xxdd.png" />
+        	<img class="text zc" src="images/zc.png" />
+        	<img class="text xd" src="images/xd.png" />
+        	
+        	
+        	<div class="xf_pi">
+        		<img class="fg" src="images/fg.png" />
+        		<!--信封图片-->
+        		<img class="yqh" src="images/yqh.png" />
+        		<img class="hb_img" src="images/hb_img.png" />
+        		<img class="lq" src="images/lq_button.png">
+        		<img class="hua_img hua_img12 xd_img" src="images/xxdd_img.png" index=11 />
+        		<img class="hua_img hua_img11 zc_img zc_img5" src="images/zc_img5.png" index=10 />
+        		<img class="hua_img hua_img10 zc_img zc_img4" src="images/zc_img.png" index=9 />
+        		<img class="hua_img hua_img9 zc_img zc_img3" src="images/zc_img3.png" index=8 />
+        		<img class="hua_img hua_img8 zc_img zc_img2" src="images/zc_img2.png" index=7 />
+        		<img class="hua_img hua_img7 zc_img zc_img1" src="images/zc_img4.png" index=6 />
+<!--        		<img class="hua_img hua_img7 cz_img" src="images/cz_img.png" index=6 />-->
+        		<img class="hua_img hua_img6 rs_img" src="images/rs_img.png" index=5 />
+        		<img class="hua_img hua_img5 sj_img" src="images/sj_img.png" index=4 />
+        		<img class="hua_img hua_img4 zm_img" src="images/zm_img.png" index=3 />
+        		<img class="hua_img hua_img3 mm_img" src="images/mm_img.png" index=2 />
+        		<img class="hua_img hua_img2 yk_img" src="images/yk_img.png" index=1 />
+        		<img class="hua_img hua_img1 xw_img" src="images/xw_img.png" index=0 />
+        		<img class="fg_y" src="images/fg_y.png" />
+        		<img class="fm" src="images/xf_pi.png" width="100%" height="100%"/>
+        	    <img class="jian_icon"  src="images/jian_icon.png" />
+        	</div>
+            
+      
+        
+        </div>
+       
+	 </div>
+
+
+
+	<script src="http://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+	    
+	
+		
+//	        Zepto('.zc_img').swipe(function(){
+//          	Zepto(this).addClass("hua_img_fly");
+//          });
+//	        
+//	        Zepto('.zc_img5').swipe(function(){
+//      		Zepto('.text').removeClass('text_in');
+//				Zepto('.xd').addClass('text_in'); 
+//          });
+            
+            
+            Zepto('.lq').tap(function(){
+            	Zepto('.hb_img').addClass('hua_hb_img_animate_down');
+	            Zepto('.lq').addClass('lq_down');
+	            setTimeout(function(){
+	            		Zepto('.yqh').addClass('hua_yqh_img_animate');
+	            		Zepto('.xf_pi').addClass('xf_pi_animate_down');
+	            },1000)
+	            	
+	            
+            });
+		
+			Zepto('.hua_img').swipeUp(function(evt){
+	             
+	            evt.stopPropagation(); 
+	            
+//	            if(Zepto(this).attr('index')<=6){
+	            	
+		            Zepto('.text').removeClass('text_in');
+					Zepto('.text').eq(Zepto(this).attr('index')).next().addClass('text_in');       
+					Zepto(this).addClass('hua_img_fly');
+				
+				
+				
+				   if(Zepto(this).attr('index')==11){
+				   	   Zepto('.text').removeClass('text_in');
+					   setTimeout(function(){
+		            		Zepto('.hb_img').addClass('hua_hb_img_animate');
+		            		Zepto('.lq').addClass('lq_up');
+		            	},500);
+				   }
+				
+				
+//				}else if(Zepto(this).attr('index')==12){
+//					Zepto(this).addClass('hua_img_fly');
+//					Zepto('.xd').removeClass('text_in');
+//					setTimeout(function(){
+//	            		Zepto('.hb_img').addClass('hua_hb_img_animate');
+//	            		Zepto('.lq').addClass('lq_up');
+//	            	},500);
+//				}
+
+			});
+			
+			
+			var ghy=false;
+			var audio=document.getElementById('audio');
+			Zepto('.close').tap(function(){
+				
+				if(ghy==false){
+				
+					Zepto('.la1').hide();
+					Zepto('.la2').show();
+					audio.pause();
+					ghy=true;
+					
+				}else{
+					Zepto('.la2').hide();
+					Zepto('.la1').show();
+					audio.play();
+					ghy=false;
+				}
+				
+			});
+			
+	    
+	    
+	    
+	    
+	    
+	    
+
+	</script>
+	<script src="js/share.js"></script>
+
+	
+	
+	
+	
+</body>
+</html>

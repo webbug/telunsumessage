@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 公共 */
+* {margin:0px; padding:0px; border:0px; 
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+html {-ms-touch-action: none;}
+img {vertical-align: top;}
+body{padding:0px;margin:0px; font-family: "微软雅黑"; font-size: 14px;-webkit-tap-highlight-color:rgba(0,0,0,0);background:#fff;}
+li {list-style:none;}
+i{font-style:normal}
+a{color:#fff; text-decoration:none;}
+a:link,a:visited,a:hover,a:active {color:#fff;}
+table {border-collapse:collapse;border:none;}
+html,
+body{
+	height: 100%;
+	overflow: hidden;
+}
+
+/*最宽480*/
+@media (min-width: 1024px) {
+	.m_wrapper {width:480px;margin: 0 auto;}
+}
+
+.m_wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+/*loding*/
+.m_porA {position: absolute;background: #021343;width: 100%;height: 100%;}
+.load {top:0!important;left:0!important;width:100%!important;}
+.loadFont{
+	    	color: #b8945c;
+	    }
+.loadImg {width:20%;margin:50% 0 0 40%!important;}	    
+.loadImg img{
+	-webkit-animation: loadcircle 1.4s infinite linear;
+}
+@-webkit-keyframes loadcircle{
+	from{
+		-webkit-transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+
+/*body*/
+#body{
+	width: 100%;
+	height: 100%;
+	background: url(../images/body_bg.jpg)no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
+	position: relative;
+}
+
+.logo{
+	position: absolute;
+}
+
+.la{
+	position: absolute;
+}
+
+.xf_pi{
+	position: absolute;
+}
+
+.xf_pi_animate{
+	-webkit-transform: translate(0,60%);
+	-webkit-transition: all 1s linear;
+}
+
+.xf_pi_animate_down{
+	-webkit-transform: translate(0,120%);
+	-webkit-transition: all 1s linear;
+}
+
+.fg{
+	position: absolute;
+	z-index: 9999999999999999999999999999;
+	-webkit-transform-origin: center top; 
+}
+
+.fg_y{
+	position: absolute;
+	z-index: 999999999;
+}
+
+.fg_fan{
+    -webkit-transition: all 1.4s;
+    -webkit-transform: rotateX(180deg);
+}
+
+
+.fm{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99999999;
+}
+
+.fm_down{
+    -webkit-transform: translate(0,120%);
+	-webkit-transition: all 1s linear;
+}
+
+.jian_icon{
+	position: absolute;
+	left: 50%;
+	z-index: 99999999999;
+	-webkit-transform: translate(-50%,0);
+	-webkit-animation: jian 1.4s linear infinite;
+	display: none;
+}
+
+@-webkit-keyframes jian{
+	from{
+		-webkit-transform: translate(0,15px);
+		opacity: 0;
+	}
+	to{
+		-webkit-transform: translate(0,0);
+		opacity: 1;
+	}
+	
+}
+
+.text{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%,40%);
+	opacity: 0;
+}
+
+.text_in{
+	-webkit-transform: translate(-50%,0);
+	-webkit-transition: all 1s linear;
+	opacity: 1;
+}
+
+
+.hua_img,.zc_img,.hb_img,.yqh{
+	position: absolute;
+	top: 5px;
+	height: auto;
+	display: block;
+	opacity: 1;
+	z-index: 9999;
+}
+
+.hua_img_animate{
+	-webkit-transform: translate(0,-82%);
+	-webkit-transition: all 0.6s linear;
+}
+
+.hua_hb_img_animate{
+	-webkit-transform: translate(0,-98%);
+	-webkit-transition: all 0.6s linear;
+}
+
+.hua_hb_img_animate_down{
+	-webkit-transform: translate(0,0);
+	-webkit-transition: all 0.6s linear;
+}
+
+
+.hua_yqh_img_animate{
+	-webkit-transform: translate(0,-140%);
+	-webkit-transition: all 1s linear;
+}
+
+.hua_yqh_img_animate_up{
+	-webkit-transform: translate(0,-302%);
+	-webkit-transition: all 0.6s linear;
+}
+
+.hua_hb_img_animate_down{
+	-webkit-transform: translate(0,0);
+	-webkit-transition: all 0.6s linear;
+}
+
+.hua_img_fly{
+	-webkit-transform: translate(0,-400%);
+	opacity: 0;
+	-webkit-transition: all 0.6s linear;
+}
+
+.hua_img_fly_down{
+	-webkit-transform: translate(0,0);
+	opacity: 1;
+	-webkit-transition: all 0.6s linear;
+}
+
+.lq{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+}
+
+.lq_up{
+	-webkit-transition: all 0.6s linear;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%,-170%);
+	z-index: 9999;
+	-webkit-animation: scl 0.9s infinite linear alternate;
+}
+
+.lq_down{
+	-webkit-transition: all 0.6s linear;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	z-index: 9999;
+	-webkit-animation: scl 0.9s infinite linear alternate;
+}
+
+
+
+@-webkit-keyframes scl{
+	from{
+
+		opacity: 0;
+	}
+	to{
+
+		opacity: 1;
+	}
+}
+
+
+
