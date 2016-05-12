@@ -83,7 +83,7 @@
 
              },
              error: function (xhr, textStatus) {
-                 alert(textStatus);
+//               alert(textStatus);
              }
          });
      }
